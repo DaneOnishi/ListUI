@@ -7,9 +7,13 @@
 
 import Foundation
 
-struct recipe: Hashable, Codable {
+struct Recipe: Hashable, Codable {
+    var image: String
     var title: String
     var numberOfIngredients: Int
     var ingredients: String
     var bodyText: String
 }
+
+
+

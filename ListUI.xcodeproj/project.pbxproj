@@ -18,6 +18,9 @@
 		411B4FB12694E19F009E1B0E /* SnackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B4FB02694E19F009E1B0E /* SnackView.swift */; };
 		411B4FB42694F3F7009E1B0E /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B4FB32694F3F7009E1B0E /* SearchBarView.swift */; };
 		411B4FB82694F93C009E1B0E /* ListButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B4FB72694F93C009E1B0E /* ListButtonView.swift */; };
+		411B4FBB26978A90009E1B0E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B4FBA26978A90009E1B0E /* CardView.swift */; };
+		411B4FBD26978AA5009E1B0E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B4FBC26978AA5009E1B0E /* Card.swift */; };
+		411B4FC32697B37E009E1B0E /* RecipePlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B4FC22697B37E009E1B0E /* RecipePlaceholderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		411B4FB02694E19F009E1B0E /* SnackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackView.swift; sourceTree = "<group>"; };
 		411B4FB32694F3F7009E1B0E /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		411B4FB72694F93C009E1B0E /* ListButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListButtonView.swift; sourceTree = "<group>"; };
+		411B4FBA26978A90009E1B0E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		411B4FBC26978AA5009E1B0E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		411B4FC22697B37E009E1B0E /* RecipePlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePlaceholderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +74,13 @@
 			children = (
 				411B4F96269414B3009E1B0E /* ListUIApp.swift */,
 				411B4F98269414B3009E1B0E /* ContentView.swift */,
+				411B4FA52694DF8A009E1B0E /* Model */,
 				411B4FB22694E1B1009E1B0E /* MealViews */,
+				411B4FBF2697B2CE009E1B0E /* RecipeView */,
+				411B4FB92694F949009E1B0E /* Components */,
 				411B4F9A269414B6009E1B0E /* Assets.xcassets */,
 				411B4F9F269414B6009E1B0E /* Info.plist */,
 				411B4F9C269414B6009E1B0E /* Preview Content */,
-				411B4FA52694DF8A009E1B0E /* Model */,
 			);
 			path = ListUI;
 			sourceTree = "<group>";
@@ -89,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				411B4FA82694DFCA009E1B0E /* Recipe.swift */,
+				411B4FBC26978AA5009E1B0E /* Card.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,7 +109,6 @@
 				411B4FAC2694E184009E1B0E /* LunchView.swift */,
 				411B4FAE2694E193009E1B0E /* DinnerView.swift */,
 				411B4FB02694E19F009E1B0E /* SnackView.swift */,
-				411B4FB92694F949009E1B0E /* Components */,
 			);
 			path = MealViews;
 			sourceTree = "<group>";
@@ -110,8 +118,17 @@
 			children = (
 				411B4FB32694F3F7009E1B0E /* SearchBarView.swift */,
 				411B4FB72694F93C009E1B0E /* ListButtonView.swift */,
+				411B4FBA26978A90009E1B0E /* CardView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		411B4FBF2697B2CE009E1B0E /* RecipeView */ = {
+			isa = PBXGroup;
+			children = (
+				411B4FC22697B37E009E1B0E /* RecipePlaceholderView.swift */,
+			);
+			path = RecipeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,15 +200,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411B4FC32697B37E009E1B0E /* RecipePlaceholderView.swift in Sources */,
 				411B4FAF2694E193009E1B0E /* DinnerView.swift in Sources */,
 				411B4FB82694F93C009E1B0E /* ListButtonView.swift in Sources */,
 				411B4FAD2694E184009E1B0E /* LunchView.swift in Sources */,
 				411B4FAB2694E084009E1B0E /* BreakfastView.swift in Sources */,
+				411B4FBB26978A90009E1B0E /* CardView.swift in Sources */,
 				411B4FA92694DFCA009E1B0E /* Recipe.swift in Sources */,
 				411B4FB42694F3F7009E1B0E /* SearchBarView.swift in Sources */,
 				411B4FB12694E19F009E1B0E /* SnackView.swift in Sources */,
 				411B4F99269414B3009E1B0E /* ContentView.swift in Sources */,
 				411B4F97269414B3009E1B0E /* ListUIApp.swift in Sources */,
+				411B4FBD26978AA5009E1B0E /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

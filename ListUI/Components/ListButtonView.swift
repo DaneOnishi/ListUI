@@ -20,7 +20,7 @@ struct ListButtonView: View {
                 ZStack{
                     Rectangle()
                         .foregroundColor(.white)
-                        .frame(width: 58, height: 58, alignment: .topTrailing)
+                        .frame(width: 48, height: 48, alignment: .topTrailing)
                         .cornerRadius(10)
                         .shadow(color: Color("Shadow"), radius: 50, x: 0.0, y: 40.0)
                     

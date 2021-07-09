@@ -12,7 +12,9 @@ struct BreakfastView: View {
         GeometryReader { view in
             VStack{
                 
-                HStack{
+                HStack(){
+                    Image(systemName: "xmark.icloud.fill")
+                       
                     ListButtonView()
                 }
                 
@@ -23,7 +25,7 @@ struct BreakfastView: View {
                     SearchBar()
                 }
                 
-            }
+            }.padding(.horizontal,30)
         }
     }
 }
