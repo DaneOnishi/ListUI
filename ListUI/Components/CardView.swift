@@ -15,8 +15,6 @@ struct CardView: View {
     var body: some View {
         ZStack{
             
-            
-
             Image(cardInfo.image)
                 .resizable()
                 .frame(width: 318, height: 360, alignment: .center)

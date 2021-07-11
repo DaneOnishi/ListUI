@@ -10,7 +10,7 @@ import SwiftUI
 struct ListButtonView: View {
     
     @State var navigationActive: Bool = false
-    
+   
     var body: some View {
         
         NavigationLink(

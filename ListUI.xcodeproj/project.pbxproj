@@ -21,6 +21,9 @@
 		411B4FBB26978A90009E1B0E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B4FBA26978A90009E1B0E /* CardView.swift */; };
 		411B4FBD26978AA5009E1B0E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B4FBC26978AA5009E1B0E /* Card.swift */; };
 		411B4FC32697B37E009E1B0E /* RecipePlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B4FC22697B37E009E1B0E /* RecipePlaceholderView.swift */; };
+		411B4FC62698A644009E1B0E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B4FC52698A644009E1B0E /* ListView.swift */; };
+		411B4FCB2698A8FA009E1B0E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411B4FCA2698A8FA009E1B0E /* CloudKit.framework */; };
+		4185E14E2698CF0500D7BBD5 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4185E14D2698CF0500D7BBD5 /* List.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,10 @@
 		411B4FBA26978A90009E1B0E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		411B4FBC26978AA5009E1B0E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		411B4FC22697B37E009E1B0E /* RecipePlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePlaceholderView.swift; sourceTree = "<group>"; };
+		411B4FC52698A644009E1B0E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		411B4FC82698A8F1009E1B0E /* ListUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ListUI.entitlements; sourceTree = "<group>"; };
+		411B4FCA2698A8FA009E1B0E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		4185E14D2698CF0500D7BBD5 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411B4FCB2698A8FA009E1B0E /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +66,7 @@
 			children = (
 				411B4F95269414B3009E1B0E /* ListUI */,
 				411B4F94269414B3009E1B0E /* Products */,
+				411B4FC92698A8FA009E1B0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,11 +81,11 @@
 		411B4F95269414B3009E1B0E /* ListUI */ = {
 			isa = PBXGroup;
 			children = (
+				411B4FC82698A8F1009E1B0E /* ListUI.entitlements */,
 				411B4F96269414B3009E1B0E /* ListUIApp.swift */,
 				411B4F98269414B3009E1B0E /* ContentView.swift */,
 				411B4FA52694DF8A009E1B0E /* Model */,
-				411B4FB22694E1B1009E1B0E /* MealViews */,
-				411B4FBF2697B2CE009E1B0E /* RecipeView */,
+				411B4FC42698A60E009E1B0E /*  Views */,
 				411B4FB92694F949009E1B0E /* Components */,
 				411B4F9A269414B6009E1B0E /* Assets.xcassets */,
 				411B4F9F269414B6009E1B0E /* Info.plist */,
@@ -98,6 +107,7 @@
 			children = (
 				411B4FA82694DFCA009E1B0E /* Recipe.swift */,
 				411B4FBC26978AA5009E1B0E /* Card.swift */,
+				4185E14D2698CF0500D7BBD5 /* List.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +139,32 @@
 				411B4FC22697B37E009E1B0E /* RecipePlaceholderView.swift */,
 			);
 			path = RecipeView;
+			sourceTree = "<group>";
+		};
+		411B4FC42698A60E009E1B0E /*  Views */ = {
+			isa = PBXGroup;
+			children = (
+				411B4FB22694E1B1009E1B0E /* MealViews */,
+				411B4FBF2697B2CE009E1B0E /* RecipeView */,
+				411B4FC72698A651009E1B0E /* ListView */,
+			);
+			path = " Views";
+			sourceTree = "<group>";
+		};
+		411B4FC72698A651009E1B0E /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				411B4FC52698A644009E1B0E /* ListView.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		411B4FC92698A8FA009E1B0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				411B4FCA2698A8FA009E1B0E /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				411B4FC32697B37E009E1B0E /* RecipePlaceholderView.swift in Sources */,
+				411B4FC62698A644009E1B0E /* ListView.swift in Sources */,
 				411B4FAF2694E193009E1B0E /* DinnerView.swift in Sources */,
 				411B4FB82694F93C009E1B0E /* ListButtonView.swift in Sources */,
 				411B4FAD2694E184009E1B0E /* LunchView.swift in Sources */,
@@ -208,6 +245,7 @@
 				411B4FBB26978A90009E1B0E /* CardView.swift in Sources */,
 				411B4FA92694DFCA009E1B0E /* Recipe.swift in Sources */,
 				411B4FB42694F3F7009E1B0E /* SearchBarView.swift in Sources */,
+				4185E14E2698CF0500D7BBD5 /* List.swift in Sources */,
 				411B4FB12694E19F009E1B0E /* SnackView.swift in Sources */,
 				411B4F99269414B3009E1B0E /* ContentView.swift in Sources */,
 				411B4F97269414B3009E1B0E /* ListUIApp.swift in Sources */,
@@ -339,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ListUI/ListUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ListUI/Preview Content\"";
 				DEVELOPMENT_TEAM = U77829B9P3;
@@ -361,6 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ListUI/ListUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ListUI/Preview Content\"";
 				DEVELOPMENT_TEAM = U77829B9P3;

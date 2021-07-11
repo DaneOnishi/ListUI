@@ -54,7 +54,7 @@ struct RecipePlaceholderView: View {
 
 struct RecipePlaceholderView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipePlaceholderView(recipe: Recipe(image: "AvocadoToast", title: "Avocado Toast", numberOfIngredients: 0, ingredients: "½ small avocado ½ \n teaspoon fresh lemon juice \n⅛ teaspoon Kosher salt \n⅛ teaspoon freshly ground black pepper \n1 (1 oz.) slice whole grain bread, toasted \n½ teaspoon extra-virgin olive oil \nToppings: Maldon sea salt flakes, red pepper flakes", bodyText: "Step 1 In a small bowl, combine avocado, lemon juice, salt, and pepper. Gently mash with the back of a fork./nTop toasted bread with mashed avocado mixture. Drizzle with olive oil and sprinkle over desired toppings./nFor perfect avocado toast, ingredient quality is key. Use fresh, crusty whole-wheat bread and the best extra-virgin olive oil you can find."
+        RecipePlaceholderView(recipe: Recipe(image: "AvocadoToast", title: "Avocado Toast", numberOfIngredients: 0, ingredients: "½ small avocado ½ \n teaspoon fresh lemon juice \n⅛ teaspoon Kosher salt \n⅛ teaspoon freshly ground black pepper \n1 (1 oz.) slice whole grain bread, toasted \n½ teaspoon extra-virgin olive oil \nToppings: Maldon sea salt flakes, red pepper flakes", bodyText: "Step 1 In a small bowl, combine avocado, lemon juice, salt, and pepper. Gently mash with the back of a fork.\nTop toasted bread with mashed avocado mixture. \nDrizzle with olive oil and sprinkle over desired toppings.\nFor perfect avocado toast, ingredient quality is key. Use fresh, crusty whole-wheat bread and the best extra-virgin olive oil you can find."
         ))
     }
 }
