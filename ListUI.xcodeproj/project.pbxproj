@@ -24,6 +24,8 @@
 		411B4FC62698A644009E1B0E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B4FC52698A644009E1B0E /* ListView.swift */; };
 		411B4FCB2698A8FA009E1B0E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411B4FCA2698A8FA009E1B0E /* CloudKit.framework */; };
 		4185E14E2698CF0500D7BBD5 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4185E14D2698CF0500D7BBD5 /* List.swift */; };
+		4185E150269B3AEF00D7BBD5 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4185E14F269B3AEF00D7BBD5 /* TabBarView.swift */; };
+		4185E153269B3C3900D7BBD5 /* TabCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4185E152269B3C3900D7BBD5 /* TabCurve.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		411B4FC82698A8F1009E1B0E /* ListUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ListUI.entitlements; sourceTree = "<group>"; };
 		411B4FCA2698A8FA009E1B0E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		4185E14D2698CF0500D7BBD5 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		4185E14F269B3AEF00D7BBD5 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		4185E152269B3C3900D7BBD5 /* TabCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCurve.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 		411B4FC42698A60E009E1B0E /*  Views */ = {
 			isa = PBXGroup;
 			children = (
+				4185E151269B3AFA00D7BBD5 /* TabBar */,
 				411B4FB22694E1B1009E1B0E /* MealViews */,
 				411B4FBF2697B2CE009E1B0E /* RecipeView */,
 				411B4FC72698A651009E1B0E /* ListView */,
@@ -165,6 +170,15 @@
 				411B4FCA2698A8FA009E1B0E /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4185E151269B3AFA00D7BBD5 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4185E14F269B3AEF00D7BBD5 /* TabBarView.swift */,
+				4185E152269B3C3900D7BBD5 /* TabCurve.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +255,7 @@
 				411B4FAF2694E193009E1B0E /* DinnerView.swift in Sources */,
 				411B4FB82694F93C009E1B0E /* ListButtonView.swift in Sources */,
 				411B4FAD2694E184009E1B0E /* LunchView.swift in Sources */,
+				4185E153269B3C3900D7BBD5 /* TabCurve.swift in Sources */,
 				411B4FAB2694E084009E1B0E /* BreakfastView.swift in Sources */,
 				411B4FBB26978A90009E1B0E /* CardView.swift in Sources */,
 				411B4FA92694DFCA009E1B0E /* Recipe.swift in Sources */,
@@ -249,6 +264,7 @@
 				411B4FB12694E19F009E1B0E /* SnackView.swift in Sources */,
 				411B4F99269414B3009E1B0E /* ContentView.swift in Sources */,
 				411B4F97269414B3009E1B0E /* ListUIApp.swift in Sources */,
+				4185E150269B3AEF00D7BBD5 /* TabBarView.swift in Sources */,
 				411B4FBD26978AA5009E1B0E /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

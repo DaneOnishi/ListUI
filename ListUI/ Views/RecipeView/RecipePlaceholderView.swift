@@ -11,44 +11,47 @@ struct RecipePlaceholderView: View {
     @State var recipe: Recipe
     
     var body: some View {
-        VStack(alignment: .leading) {
-            
-            HStack(alignment: .center) {
-                Image(recipe.image)
-                    .resizable()
-                    .cornerRadius(10)
-                    .shadow(color: Color("Shadow"), radius: 50, x: 0.0, y: 40.0)
-                    .edgesIgnoringSafeArea(.all)
-                    .padding(.trailing, 20)
-                    .padding(.bottom, 20)
-            }
-            
-            VStack(alignment: .leading)  {
-                Text(recipe.title)
-                    .font(.system(size: 36, weight: .semibold, design: .serif))
-                    .foregroundColor(Color("TextColor"))
-                    .padding(.bottom,10)
-              
-                Text("Ingredients")
-                    .font(.system(size: 24, weight: .semibold, design: .serif))
-                    .foregroundColor(Color("TextColor"))
-                    .padding(.bottom, 3)
-                Text(recipe.ingredients)
-                    .font(.system(size: 14, weight: .medium, design: .rounded))
-                    .foregroundColor(Color("TextColor"))
-                    .padding(.bottom, 10)
-               
-                Text("How to")
-                    .font(.system(size: 24, weight: .semibold, design: .serif))
-                    .foregroundColor(Color("TextColor"))
-                    .padding(.bottom, 3)
-               
-                Text(recipe.bodyText)
-                    .font(.system(size: 14, weight: .medium, design: .rounded))
-                    .foregroundColor(Color("TextColor"))
-                Spacer()
-            }
-        }.padding(20)
+        
+        GeometryReader { view in
+            VStack(alignment: .leading) {
+                
+                HStack(alignment: .center) {
+                    Image(recipe.image)
+                        .resizable()
+                        .cornerRadius(10)
+                        .shadow(color: Color("Shadow"), radius: 50, x: 0.0, y: 40.0)
+                        .edgesIgnoringSafeArea(.all)
+                        .padding(.trailing, 20)
+                        .padding(.bottom, 20)
+                }
+                
+                VStack(alignment: .leading)  {
+                    Text(recipe.title)
+                        .font(.system(size: 36, weight: .semibold, design: .serif))
+                        .foregroundColor(Color("TextColor"))
+                        .padding(.bottom,10)
+                    
+                    Text("Ingredients")
+                        .font(.system(size: 24, weight: .semibold, design: .serif))
+                        .foregroundColor(Color("TextColor"))
+                        .padding(.bottom, 3)
+                    Text(recipe.ingredients)
+                        .font(.system(size: 14, weight: .medium, design: .rounded))
+                        .foregroundColor(Color("TextColor"))
+                        .padding(.bottom, 10)
+                    
+                    Text("How to")
+                        .font(.system(size: 24, weight: .semibold, design: .serif))
+                        .foregroundColor(Color("TextColor"))
+                        .padding(.bottom, 3)
+                    
+                    Text(recipe.bodyText)
+                        .font(.system(size: 14, weight: .medium, design: .rounded))
+                        .foregroundColor(Color("TextColor"))
+                    Spacer()
+                }
+            }.padding(20)
+        }
     }
 }
 

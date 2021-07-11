@@ -43,7 +43,7 @@ struct CardView: View {
             .padding(.trailing, 120)
             
             
-        }
+        }.padding(15)
     }
 }
 

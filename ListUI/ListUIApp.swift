@@ -9,9 +9,26 @@ import SwiftUI
 
 @main
 struct ListUIApp: App {
+    @State var selectedTab = Tab.mealPlan
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            VStack {
+                ZStack(alignment: .bottom){
+                    if selectedTab == .heart {
+                        BreakfastView()
+                    } else if selectedTab == .mealPlan {
+                        LunchView()
+                    } else if selectedTab == .tips {
+                        LunchView()
+                    } else {
+                       DinnerView()
+                    }
+              
+                    TabBarView(selectedTab: $selectedTab)
+                }
+            }
+           
         }
     }
 }
